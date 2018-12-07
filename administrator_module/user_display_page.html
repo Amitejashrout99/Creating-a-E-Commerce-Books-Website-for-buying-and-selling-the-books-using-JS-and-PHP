@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>View Registered User</title>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <script src='jquery-3.2.1.min.js'></script>
+    </head>
+    <style>
+         body{
+            background-image: url("lamp-book.jpg");
+            background-attachment: fixed;
+        }
+        
+        #title_bar
+        {
+            width:inherit;
+            height:70px;
+            border-width:5px;
+            border-style: solid;
+            border-radius: 15px;
+            
+        }
+        #user_id
+        {
+            width:400px;
+            height:60px;
+            margin-left: 10px;
+            border-width: 2px;
+            border-style: solid;
+            margin-top:3px;
+        }
+        #user_image
+        {
+            width:50px;
+            height:50px;
+            margin-left: 5px;
+            border-radius: 2px;
+            border-width:1.5px;
+            margin-top: 2.5px;
+            background-image: url("user.jpg");
+        }
+
+        #user_info
+        {
+            width:300px;
+            height:50px;
+            float:right;
+            border-width: 1.5px;
+            margin-top:-52px;
+            margin-right: 12px;
+        }
+
+        #welcome_box
+        {
+            width:450px;
+            height:50px;
+            border-style: solid;
+            margin-left:500px;
+            margin-top: -59px;
+        }
+
+        #user_text{
+            color: cornsilk;
+            font-size: 120%;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #log_out{
+            width:200px;
+            height:40px;
+            border-style: solid;
+            border-radius:5px;
+            float: right;
+            margin-right: 10px;
+            background-color:aqua;
+            margin-top:-48px;       
+        }
+        #banner_text
+        {
+            color:whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 180%;
+            font-weight: bolder;
+            text-align: center;
+            font-style: italic;
+        }
+        #banner{
+            margin-top:80px;
+            margin-left:10px;
+        }
+        #user_display
+        {
+            width:inherit;
+            height:570px;
+            border-style: solid;
+            border-width:3px;
+        }
+        #image
+        {
+            width:200px;
+            height:200px;
+            border-style:solid;
+            border-width:3px;
+            margin-left:5px;
+            margin-top:3px;
+        }
+        #user_information{
+            width:1050px;
+            height:200px;
+            border-style:solid;
+            border-width:3px;
+            margin-left:270px;
+            margin-top:-206px;
+        }
+        #books_information
+        {
+            width:1315px;
+            border-style: solid;
+            border-width:3px;
+            height:250px;
+            margin-top: 10px;
+            margin-left:5px;
+            display: none;
+        }
+        #table{
+            margin-left:230px;
+            margin-top:20px;
+        }
+        #show_details{
+            width:200px;
+            height:50px;
+            border-style: solid;
+            margin-left:20px;
+            border-radius: 8px;
+        }
+        #hide_details{
+            width:200px;
+            height:50px;
+            border-style: solid;
+            margin-left:20px;
+            border-radius: 8px;
+            float:right;
+            margin-top:125px;
+            margin-right: 20px;
+        }
+    </style>
+    <body>
+        <div id="title_bar">
+            <div id="user_id">
+                <div id="user_image"></div>
+                <div id="user_info"><p id="user_text">erysihihsxi</p></div>
+            </div>
+            <div id="welcome_box"><p id="welcome_text"></p></div>
+            <button id="log_out" name="logout"  method="post"><a href="logout.php">SIGN-OUT</a></button>
+        </div>
+        <h3 id="banner">
+            <p id="banner_text">"When The Customer Comes first, The Customer will last"</p>
+        </h3>
+        <hr><br>
+        <div id="user_display">
+            <div id="image">
+
+            </div>
+            <div id="user_information">
+
+            </div>
+            <div id="books_information">
+                    <table id="table" border='1'>
+                        <tr>
+                           <th style="color:whitesmoke;">Course Code</th>
+                           <th style="color:whitesmoke;">Course Name</th>
+                           <th style="color:whitesmoke;">Faculty Id</th>
+                           <th style="color:whitesmoke;">Registration Number</th>
+                           <th style="color:whitesmoke;">Student Name</th>
+                           <th style="color:whitesmoke;">Faculty Name</th>
+                           <th style="color:whitesmoke;">Student Branch</th>
+                           <th style="color:whitesmoke;">Status</th>
+                           <th style="color:whitesmoke;">Course Type</th>
+                        </tr>; 
+                    </table>   
+                    <button id="hide_details">Hide the details of the user</button>       
+            </div>
+            <br>
+            <button id="show_details">Show the details of the user</button>
+        </div>
+        <script>
+            //$("#books_information").hide();
+            $("#show_details").click(function(){
+                $('#books_information').show();
+            })
+            $("#hide_details").click(function(){
+                $('#books_information').hide();
+            })
+        </script>
+    </body>
+</html>

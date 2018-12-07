@@ -1,0 +1,388 @@
+<html>
+    <head>
+        <title>Home-page</title>
+        
+        <script src='jquery-3.2.1.min.js'></script>
+    </head>
+    <style>
+        
+        body{
+            background-image: url("lamp-book.jpg");
+            bac
+        }
+        
+        #title_bar
+        {
+            width:inherit;
+            height:70px;
+            border-width:5px;
+            border-style: solid;
+            border-radius: 15px;
+            
+        }
+        #user_id
+        {
+            width:400px;
+            height:60px;
+            margin-left: 10px;
+            border-width: 2px;
+            border-style: solid;
+            margin-top:3px;
+        }
+        #user_image
+        {
+            width:50px;
+            height:50px;
+            margin-left: 5px;
+            border-radius: 2px;
+            border-width:1.5px;
+            margin-top: 2.5px;
+            background-image: url("user.jpg");
+        }
+
+        #user_info
+        {
+            width:300px;
+            height:50px;
+            float:right;
+            border-width: 1.5px;
+            margin-top:-52px;
+            margin-right: 12px;
+        }
+
+        #welcome_box
+        {
+            width:450px;
+            height:50px;
+            border-style: solid;
+            margin-left:500px;
+            margin-top: -59px;
+        }
+
+        #user_text{
+            color: cornsilk;
+            font-size: 120%;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #log_out{
+            width:200px;
+            height:40px;
+            border-style: solid;
+            border-radius:5px;
+            float: right;
+            margin-right: 10px;
+            background-color:aqua;
+            margin-top:-48px;       
+        }
+        #main_box1
+        {
+            width:400px;
+            height:500px;
+            border-style: solid;
+            border-width: 4px;
+            margin-top: 40px;
+            margin-left: 10px;
+            background-color: blue;
+        }
+
+        
+        #main_box2
+        {
+            width:400px;
+            height:500px;
+            border-style: solid;
+            border-width: 4px;
+            margin-top: -507px;
+            margin-left: 460px;
+            background-color: chartreuse;
+        }
+
+        #main_box3
+        {
+            width:400px;
+            height:500px;
+            border-style: solid;
+            border-width: 4px;
+            margin-top: -507px;
+            float: right;
+            margin-right: 10px;
+            background-color: darkgreen;
+        }
+
+        #main_box1_image{
+            border-style: solid;
+            border-width:2px;
+            width:200px;
+            height:200px;
+            margin-top: 150px;
+            margin-left: 90px;
+        }
+
+        #main_box2_image
+        {
+            border-style: solid;
+            border-width:2px;
+            width:225px;
+            height:225px;
+            margin-top: 150px;
+            margin-left:90px;
+        }
+
+        #main_box1_content{
+            border-style: solid;
+            border-width:2px;
+            width:40px;
+            height:40px;
+            float:right;
+            margin-top: -200px;
+            display:none;
+        }
+
+        #welcome_text{
+
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 150%;
+            font-weight: bold;
+            text-align: center
+        }
+
+        #main_box2_content{
+            border-style: solid;
+            border-width:2px;
+            width:40px;
+            height:40px;
+            float:right;
+            margin-top: -200px;
+            display:none;
+        }
+
+        #main_box3_image
+        {
+            border-style: solid;
+            border-width:2px;
+            width:225px;
+            height:225px;
+            margin-top: 150px;
+            margin-left:90px;
+        }
+
+        #main_box3_content{
+            border-style: solid;
+            border-width:2px;
+            width:40px;
+            height:40px;
+            float:right;
+            margin-top: -200px;
+            display:none;
+        }
+
+         #log_out{
+            width:200px;
+            height:40px;
+            border-style: solid;
+            border-radius:5px;
+            float: right;
+            margin-right: 10px;
+            background-color:aqua;
+            margin-top:-48px;       
+        }
+
+        #text1
+        {
+            color:chartreuse;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 150%;
+            font-weight: bolder;
+            
+        }
+
+        #text2
+        {
+            color:darkblue;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 150%;
+            font-weight: bolder;
+            
+        }
+
+        #user_page
+        {
+            height:40px;
+            width:200px;
+            border-radius:10px;
+            margin-left:92px;
+            border-style: solid;
+            border-width:4px;
+            margin-top:10px;
+            display: none;
+        }
+
+        #user_page1
+        {
+            height:40px;
+            width:200px;
+            border-radius:10px;
+            margin-left:92px;
+            border-style: solid;
+            border-width:4px;
+            margin-top:10px;
+            display: none;
+        }
+
+        #user_page2
+        {
+            height:40px;
+            width:200px;
+            border-radius:10px;
+            margin-left:92px;
+            border-style: solid;
+            border-width:4px;
+            margin-top:10px;
+            display: none;
+        }
+        #normal
+        {
+            width:200px;
+            height:40px;
+            margin-left:560px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+    </style>
+    <body>
+        <div id="title_bar">
+            <div id="user_id">
+                <div id="user_image"><a href="administartor_first_page.html"</div>
+                <div id="user_info"><p id="user_text">erysihihsxi</p></div>
+            </div>
+            <div id="welcome_box"><p id="welcome_text"></p></div>
+            <button id="log_out" name="logout"  method="post"><a href="logout.php">SIGN-OUT</a></button>
+        </div>
+        <div id="main_box1">
+                <div id="main_box1_image">
+                    <img src="avatar.png">
+                </div>
+                <div id="main_box1_content">
+                    <p id="text1"></p>
+                    <button id="normal">Click to show less</button>
+                </div>
+                <button id="user_page"><a href="#">VISIT USER INFO</a></button>
+        </div>
+        <div id="main_box2">
+                <div id="main_box2_image">
+                    <img src="book.jpg">
+                </div>
+                <div id="main_box2_content"><p id="text2"></p></div>
+                <button id="user_page1"><a href="#">VISIT THE BOOKS SECTION</a></button>
+        </div>
+        <div id="main_box3">
+                <div id="main_box3_image">
+                    <img src="settings.png">;
+                </div>
+                <div id="main_box3_content"><p id="text3"></p></div>
+                <button id="user_page2"><a href="#">ADMINISTRATOR SETTINGS</a></button>
+        </div>
+        <script>
+                $("#main_box1").click(function(){
+                        $("#main_box2").hide();
+                        $("#main_box3").hide();
+                        $("#main_box1_content").show();
+                        $("#user_page").show();
+                            $(this).animate({
+                                width:"1300px",
+                                height:"600px",
+                                },2000
+                            )
+                            $("#main_box1_image").animate({
+                                marginLeft:"50px",
+                                marginTop:"190px",
+                            },1000)
+                            $("#main_box1_content").animate({
+                                width:"800px",
+                                height:"400px",
+                                marginRight:"10px",
+                                marginTop:"-300px",
+                            },1000)
+                            $("#user_page").animate({
+                                marginLeft:"800px",
+                                marginTop:"40px",
+                            },1000)
+                },mycall())
+
+               
+
+                $("#main_box2").click(function(){
+                        $("#main_box1").hide();
+                        $("#main_box3").hide();
+                        $("#main_box2_content").show();
+                        $("#user_page1").show();
+                        $(this).animate({
+                            width:"1350px",
+                            height:"500px",
+                            marginTop:"30px",
+                            marginLeft:"-10px",
+                            marginRight:"-70px",
+                            },2000
+                        )
+                        $("#main_box2_content").animate({
+                                width:"800px",
+                                height:"400px",
+                                marginRight:"20px",
+                                marginTop:"-320px",
+                            },1000)
+
+                        $("#user_page1").animate({
+                                marginLeft:"850px",
+                                marginTop:"-10px",
+                            },1000)
+                },mycall1())
+                
+                $("#main_box3").click(function(){
+                    $("#main_box1").hide();
+                    $("#main_box2").hide();
+                    $("#main_box3_content").show();
+                    $("#user_page2").show();
+                    $(this).animate({
+                        width:"1350px",
+                        height:"520px",
+                        marginTop:"30px",
+                        marginRight:'-5px'
+                    },2000)
+
+                    $("#main_box3_content").animate({
+                                width:"800px",
+                                height:"400px",
+                                marginRight:"20px",
+                                marginTop:"-320px",
+                            },1000)
+                    $("#user_page2").animate({
+                                marginLeft:"860px",
+                                marginTop:"-10px",
+                            },1000)
+                },mycall2())
+
+                function mycall()
+                {
+                    document.getElementById("text1").innerHTML="This website consist of more then x users at the current moment , All the users have been verified by the appropiate background-check measures to check their authenticity and the number of the sellers are x <br><br> The plan to include more users cum seller are being undergoing to cater to all the people around the community <br> <br> Majority of the users are college students and majority of the sellers are the buisness owners around the area who contribute to the ever rising database of the website";
+                    
+                }
+
+                function mycall1()
+                {
+                    document.getElementById("text2").innerHTML=" The website contains more then x books at the moment from more then x authors <br> <br> All the books have been categorized into genres and also on the basis of the ratings and the price which helps in the proper choice of buying the book <br> <br> The website also displays the number of books, their details , their isbn <br><br> Under administartive privelages you can change the various visibility of the books and change their acccesibility <br><br> ";
+                }
+
+                function mycall2()
+                {
+                    document.getElementById("text3").innerHTML=" admin settings";
+                }
+        </script>
+    </body>
+</html>

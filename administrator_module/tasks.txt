@@ -1,0 +1,108 @@
+alert("java script is working too");
+
+more then 5000 titles including old and new from authors worldwide
+
+sq5dgqpknlb3m7r20t3kdi7c8t
+
+a3s7mlcldnjp2aon6fulg47t0i
+
+width:"400px",
+                                height:"500px",
+
+
+The various administrative prvilages that are provided are:
+
+1. Ability to see the type of users that have visited the website , the no of logins that they have attempted , session ids
+
+2. Ability to see the user , their personal details and the number of books that they have bought and whether they are sellers or not and being administartor ability to block a user from visiting the  website
+
+3. Ability to manipulate the sellers information , the books that they have put up for sale , their personal infomation , and finally the ability to block the seller from putting up books for sale.
+
+4. Ability to view the authors , identify the no of books that are available per author and to manipulate the website inorder to promote a particular author
+
+
+echo "<p style='color:white;font-size:200%;'>"."The ISBN of the book is"." ".$row[0]."</p>"."<br>";
+        echo "<p style='color:white;font-size:200%;'>"."The Book name is"." ".$row[1]."</p>"."<br>";
+        echo "<p style='color:white;font-size:200%;'>"."The issue date of the book is"." ".$row[2]."</p>"."<br>";
+        echo "<p style='color:white;font-size:200%;'>"."The return date of the book is"." ".$row[3]."</p>"."<br>";
+        echo "<p style='color:white;font-size:200%;'>"."The fine due is"." ".$row[4]."</p>"."<br>";
+
+ echo "<script>
+                    document.getElementById('name').innerHTML= 'The name of the user is'+' '+$row[0]+'.'';
+            </script>"; 
+
+
+<table id='table' border='1'>
+                            <tr>
+                                <th style='color:whitesmoke;'>Course Code</th>
+                                <th style='color:whitesmoke;'>Course Name</th>
+                                <th style='color:whitesmoke;'>Faculty Id</th>
+                                <th style='color:whitesmoke;'>Registration Number</th>
+                                <th style='color:whitesmoke;'>Student Name</th>
+                                <th style='color:whitesmoke;'>Faculty Name</th>
+                                <th style='color:whitesmoke;'>Student Branch</th>
+                                <th style='color:whitesmoke;'>Status</th>
+                                <th style='color:whitesmoke;'>Course Type</th>
+                            </tr>;   
+
+
+agenda
+
+update the image (completed)
+
+make the logout button more functional
+
+build the seller page
+
+make the administrator page
+
+make the search bar
+
+
+
+
+echo $_SESSION["username"];
+    echo $_SESSION["password"];
+    echo $_SESSION["sessionid"];
+
+<a href="administartor_login.html">
+
+
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+
+
+#submission{
+            float:right;
+            width:180px;
+            height:50px;
+            margin-right: 28px;
+            margin-top: 30px;
+            margin-bottom: -330px;
+            border-radius: 8px;
+            background-color: orange;
+        }
+
+        #submission1{
+            float:left;
+            width:180px;
+            height:50px;
+            margin-left: 161px;
+            margin-top: 30px;
+            border-radius: 8px;
+            background-color: orange;
+        }
+
+
+16789
+
+23456
+
+
+6239
+1990
+1204
+4566
+8523
